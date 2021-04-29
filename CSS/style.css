@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400|Raleway:300");
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+body {
+  background-color: #ccc;
+  overflow-x: hidden;
+}
+
+/* header */
+.full-curve {
+  height: 38vh;
+  background-color: rgb(31 31 233 / 87%);
+
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(31 31 233 / 87%); */
+}
+.user {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+}
+.user-span {
+  font-size: 10px;
+  opacity: 0.7;
+  text-decoration: none;
+  color: #fff;
+}
+.right-align {
+  text-align: right;
+}
+
+.double-arrow {
+  padding: 5px;
+}
+
+/* My info */
+
+.info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.user-info {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  width: 10%;
+  
+  /* justify-content: space-between; */
+}
+.user-info:hover{
+ 
+  transform: scale(
+        1.2
+      );
+      transition: transform .5s ease;
+
+  /* justify-content: space-between; */
+}
+.user-score-1 {
+  color: ;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  display: block;
+  color: rgb(5, 5, 116);
+  background: #2f33701a;
+  border-top-left-radius: 100% 15%;
+  border-bottom-left-radius: 100% 15%;
+  width: 25%;
+  justify-content: space-evenly;
+}
+.user-score-1:hover{
+
+transform: scale(
+        1.1
+      );
+      transition: transform .5s ease;
+}
+.user-score-2 {
+  color: ;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  display: block;
+  color: rgb(5, 5, 116);
+  background: #2f33701a;
+
+  width: 25%;
+  justify-content: space-evenly;
+}
+.user-score-2:hover{
+
+  transform: scale(
+          1.1
+        );
+        transition: transform .5s ease;
+  }
+.user-score-3 {
+  color: ;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  display: block;
+  color: rgb(5, 5, 116);
+  background: #2f33701a;
+  border-top-right-radius: 100% 15%;
+  border-bottom-right-radius: 100% 15%;
+  width: 25%;
+  justify-content: space-evenly;
+}
+.user-score-3:hover{
+
+  transform: scale(
+          1.1
+        );
+        transition: transform .5s ease;
+  }
+
+
+.num-x-1 {
+  opacity: 0.3;
+  text-align: end;
+  width: 58%;
+}
+.num-x-2 {
+  opacity: 0.3;
+}
+
+.num-x-3 {
+  opacity: 0.3;
+  text-align: start;
+  margin-left: 78px;
+}
+.user-score span {
+  /* text-align: end;  */
+  color: rgb(5, 5, 116) !important;
+}
+.user-score-1 span {
+  /* text-align: start; */
+  color: rgb(5, 5, 116) !important;
+  font-weight: bold;
+}
+.user-score-2 span {
+  /* text-align: start; */
+  color: rgb(5, 5, 116) !important;
+  font-weight: bold;
+}
+.user-score-3 span {
+  /* text-align: start; */
+  color: rgb(5, 5, 116) !important;
+  font-weight: bold;
+}
+.user-info:hover {
+  background-color: rgba(170, 170, 170, 0.384);
+  border-radius: 10%;
+  color: #333;
+  transform: scale(
+    1.1
+  );
+  transition: transform .5s ease;
+
+}
+
+
+/* cards */
+.tinder {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* opacity: 0; */
+  transition: opacity 0.1s ease-in-out;
+}
+
+.loaded.tinder {
+  opacity: 1;
+}
+
+.tinder--status {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  z-index: 2;
+  width: 100%;
+  border-top-right-radius: 81%;
+  border-top-left-radius: 81%;
+  position: relative;
+  text-align: center;
+  pointer-events: none;
+}
+
+.tinder--status i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+/* .tinder_love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.tinder_nope .fa-remove {
+  opacity: 0.7;
+  transform: scale(1);
+} */
+
+.tinder--cards {
+  flex-grow: 1;
+  /* padding-top: 40px; */
+  text-align: center;
+  display: flex;
+  position: relative;
+  top: 5%;
+  justify-content: center;
+  align-items: flex-start;
+  /* z-index: 1; */
+}
+
+.tinder--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 100%;
+  height: 82vh;
+  background: #ffffff;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  box-shadow: 0px 9px 20px 0px #9ea2a370;
+  background-image: linear-gradient(to right, #fff, #808080ab);
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  border-top-left-radius: 100% 10%;
+  border-top-right-radius: 100% 10%;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+}
+
+.moving.tinder--card {
+  transition: none;
+
+  cursor: grabbing;
+}
+.tinder--card label {
+  background-color: red;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+  padding: 5px;
+}
+.tinder--card span {
+  color: #fff;
+  padding: 7px;
+  font-size: 18px;
+}
+.tinder--card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.tinder--card h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.tinder--card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+/* guide buttons */
+
+.way-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.game h6 {
+  color: royalblue;
+  font-size: 12px;
+}
+
+.game h4 {
+  color: rgb(5, 5, 116);
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.user-info h2 {
+  color: rgb(5, 5, 116);
+}
+.user-info-score span {
+  color: rgb(5, 5, 116);
+}
+.info-score {
+  align-items: center;
+  display: flex;
+  padding: 0px 80px 0px 80px;
+  justify-content: space-between;
+}
+.user-info-score {
+  display: block;
+ 
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.user-info-score:hover {
+  transform: scale(
+        1.1
+      );
+      transition: transform .5s ease;
+
+  
+}
+
+.player-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px;
+}
+.player-name h4 {
+  font-size: 18px;
+  color: rgb(5, 5, 116);
+  text-align: start;
+}
+
+.player-name span {
+  font-size: 10px;
+  color: rgb(5, 5, 116);
+}
+.player-credits {
+  text-align: start;
+  opacity: 0.5;
+}
+
+.player-credits-1 {
+  text-align: end;
+  opacity: 0.5;
+}
+.player-name-1 h4 {
+  text-align: end;
+}
+
+/* rangebar */
+
+.frame {
+  position: absolute;
+  top: 125%;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* margin-top: -200px;
+  margin-left: -200px; */
+  border-radius: 2px;
+  /* box-shadow: .5rem 1rem 1rem 0 rgba(0,0,0,0.6); */
+  overflow: hidden;
+  color: #333;
+  font-family: "Rubik", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tooltip1 {
+  height: 160px !important;
+  width: 100% !important;
+  overflow: hidden;
+  padding: 10px;
+}
+#tooltip1 .rs-container {
+  left: 50%;
+  margin-left: -300px;
+}
+#tooltip1 .rs-tooltip {
+  top: 100px;
+  margin-top: -18.1428px !important;
+  margin-left: -18.5px !important;
+  color: rgb(15, 15, 116);
+  font-size: 50px !important;
+}
+.rs-tooltip-text {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+
+.rs-block {
+  padding: 0 !important;
+}
+.rs-inner {
+  /* background-color: red; */
+  background-image: linear-gradient(to right, gray, #fff, gray);
+}
+.rs-overlay1 {
+  transform-origin: -20% 100% i !important;
+}
+.rs-overlay1,
+.rs-overlay2 {
+  width: 50% !important;
+}
+
+.rs-path::after {
+  border: 10px solid !important;
+}
+
+.rs-border {
+  border: none !important;
+  box-shadow: 0px -2px 8px 0px grey;
+}
+
+.rs-handle.rs-move,
+.rs-handle.rs-focus {
+  width: 40px !important;
+  height: 40px !important;
+  margin: -10px 0px 0px -15px !important;
+  border: none !important;
+}
+
+.rs-handle-dot:after {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 3px 0px 7px 0px grey;
+}
+
+.rs-range-color {
+  background-color: transparent !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .tinder--card {
+    max-width: 400px;
+    height: 56vh;
+  }
+  .user-info {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+   
+  }
+  .user-info:hover {
+    
+    transform: scale(
+        1.1
+      );
+      transition: transform .5s ease;
+
+  }
+  .frame {
+    position: absolute;
+    top: 90%;
+  }
+  .player-name {
+    padding: 0px 15px;
+  }
+  .info-score {
+    /* padding-top: 20px; */
+    display: flex;
+    padding: 0px;!important
+    align-items: center;
+    justify-content: space-between;
+  }
+  .num-x-1 {
+    width: 75%;
+  }
+  .num-x-3 {
+ 
+    margin-left: 15px;
+  }
+}

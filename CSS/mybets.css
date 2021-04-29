@@ -1,0 +1,167 @@
+.tinder--cards {
+  display: block;
+  margin-top: 50px;
+}
+.bet-card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 54vh;
+  background: #ffffff;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  will-change: transform;
+  /* background-image: linear-gradient( to right, #fff, #80808069 ); */
+  box-shadow: 0px 20px 20px 20px #9ea2a370;
+
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  border-top-left-radius: 100% 15%;
+  border-top-right-radius: 100% 15%;
+  border-bottom-left-radius: 100% 20%;
+  border-bottom-right-radius: 100% 20%;
+}
+.bet-card:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.bet-card::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  left: -10%;
+  right: -10%;
+  border-radius: 50%;
+  bottom: -30px;
+  background: #cccccc;
+}
+.bet-card:nth-of-type(n) {
+  margin: -25px 0 0 0;
+}
+
+.bet-card label {
+  background-color: green;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+  padding: 5px;
+  color: rgb(5, 5, 116);
+}
+.status {
+  color: #ffffff !important;
+}
+.bet-card span {
+  color: rgb(5, 5, 116);
+  padding: 7px;
+  font-size: 18px;
+}
+.bet-card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.bet-card h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.bet-card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+.img-name {
+  display: flex;
+  align-items: center;
+}
+.img-name h4 {
+  font-size: 12px;
+  padding: 10px;
+}
+.player-name {
+  display: block;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.player-name h4 {
+  font-size: 12px;
+  /* padding: 5px; */
+}
+.bet-card span {
+  color: rgb(5, 5, 116);
+  padding: 7px;
+  font-size: 18px;
+}
+.number {
+  display: block;
+}
+
+.player-name h3 {
+  font-size: 14px;
+  color: rgb(5, 5, 116);
+  text-align: start;
+}
+.player-name-1 {
+  font-size: 10px;
+  color: rgb(5, 5, 116);
+  text-align: end;
+  opacity: 0.6;
+}
+
+.game h6 {
+  color: royalblue;
+  font-size: 10px;
+  text-align: start;
+}
+.game h4 {
+  color: rgb(5, 5, 116);
+  font-size: 12px;
+  text-align: start;
+}
+
+.way-info-1 {
+  align-items: center;
+  display: block;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
+  background: linear-gradient(#3a39391f, #f7f7fc30);
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr.new4 {
+  border-radius: 5px;
+  border: 2px solid #aaa;
+  opacity: 0.2;
+  margin-bottom: 13px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .bet-card {
+    height: 34vh;
+    padding-bottom: 34px;
+  }
+  /* .bet-card:hover {
+    transform: scale(
+      1.1
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  } */
+  @media (hover: hover) {
+    .bet-card:hover {
+      transform: scale(
+        1.1
+      ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    } 
+  
+}
